@@ -21,7 +21,7 @@ class ListPair:
     def max(self):
         max_pair = Pair(0, 0, 0)
         for pair in self.data:
-            if pair.rate > max_pair.rate:
+            if pair.rate >= max_pair.rate:
                 max_pair = pair
 
         return max_pair

@@ -13,7 +13,7 @@ class Generator:
                 if i == j:
                     source[i].append(999999)
                 else:
-                    source[i].append(int(random.random() * 20))
+                    source[i].append(int(random.random() * 10))
         self.write_source(source)
 
     def write_source(self, source):
@@ -24,6 +24,6 @@ class Generator:
             f.write(line)
         f.close()
 
-
-g = Generator(100)
-g.generate()
+for i in range(20, 240, 20):
+    g = Generator(i)
+    g.generate()
