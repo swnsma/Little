@@ -1,6 +1,3 @@
-from copy import copy
-
-
 class Result:
     def __init__(self, path, rate):
         self.path = path

@@ -5,6 +5,7 @@ from Structures.LittleMatrix import LittleMatrix
 class Reader:
     def __init__(self):
         self.files = glob.glob('source/*.little')
+        self.files.sort(reverse=True)
 
     def get_all_files(self):
         return self.files
